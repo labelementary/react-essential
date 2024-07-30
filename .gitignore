@@ -1,0 +1,11 @@
+# Logs
+pnpm-debug.log*
+
+# Dependencies
+node_modules
+dist
+*.local
+
+# Logs
+vite.config.js
+tsconfig.node.tsbuildinfo

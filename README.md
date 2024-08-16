@@ -11,9 +11,11 @@ React.js Essential - An Essential Template to build an modern react.js applicati
 ```bash
 radium init --with
 ```
+
 ```bash
 enter the name of project and url of this template
 ```
+
 > `radium` cli will initialize your project with this template and install dependencies, initialize as git repository and prepare your project for development.
 
 ## Features

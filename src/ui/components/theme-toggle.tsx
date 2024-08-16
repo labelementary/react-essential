@@ -6,11 +6,15 @@ export function ThemeToggle() {
   return (
     <div className={"my-8 flex items-center justify-center gap-4"}>
       <SunIcon
-        className={"hover:cursor-pointer"}
+        width={14}
+        height={14}
+        className={"cursor-pointer"}
         onClick={() => setTheme("light")}
       />
       <MoonIcon
-        className={"hover:cursor-pointer"}
+        width={14}
+        height={14}
+        className={"cursor-pointer"}
         onClick={() => setTheme("dark")}
       />
     </div>

@@ -7,5 +7,4 @@ dist
 *.local
 
 # Logs
-vite.config.js
-tsconfig.node.tsbuildinfo
+tsconfig.tsbuildinfo

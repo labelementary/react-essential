@@ -14,6 +14,7 @@ const config = {
       foreground: "hsl(var(--foreground))",
     },
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
 

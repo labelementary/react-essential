@@ -1,5 +1,5 @@
 import { ThemeProvider } from "@/lib/theme-provider";
-import { Outlet, createRootRoute } from "@tanstack/react-router";
+import { createRootRoute, Outlet } from "@tanstack/react-router";
 import { createHead } from "unhead";
 
 export const Route = createRootRoute({

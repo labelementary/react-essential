@@ -6,7 +6,7 @@ export const Route = createRootRoute({
   component: RootComponent,
 });
 
-export const head = createHead();
+export const head: ReturnType<typeof createHead> = createHead();
 
 function RootComponent() {
   return (

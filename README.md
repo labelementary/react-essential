@@ -1,71 +1,67 @@
-# React Essential
+# Unified Starter - React Essential
 
-An Essential Template to build an Modern React.js application with all the essentials included.
-
-## Getting Started
-
-### Prerequisites
-
-React Essential comes with two variants of the template - `main` [branch](https://github.com/radiumlabs/react-essential/tree/main) starter configured with biome.js for linting and formatting and `eslint-prettier` [branch](https://github.com/radiumlabs/react-essential/tree/eslint-prettier) starter configured with prettier and eslint for linting and formatting. Choose the one that suits you best.
-
-### Radium - [Install Radium CLI](https://github.com/radiumlabs/radium) (Recommended)
-
-`radium` is an CLI tool to initialize any project. By using `radium init --with` command, radium will install dependencies, initialize as git repository, and prepare your project for development by cleaning up the project.
-
-```bash
-radium init --with
-```
-
-and then follow the instructions to enter the name of project and url of this template.
-
-### Manual Installation
-
-You can also manually install the template by cloning the repository and installing the dependencies. But initially you have to clean up the project and then start the development server.
-
-```bash
-git clone https://github.com/radiumlabs/react-essential.git
-```
-
-```bash
-cd react-essential
-```
-
-Choose your preferred package manager (PNPM or YARN or BUN or NPM) and install the dependencies but before that, you have to clean up the project such as removing the `.git` folder and `bun.lockb` file.
-
-```bash
-git bash
-```
-
-```bash
-rm -rf .git bun.lockb
-```
-
-and then install the dependencies by using the package manager of your choice.
-
-```bash
-pnpm/yarn/bun/npm install
-```
-
-```bash
-pnpm/yarn/bun/npm run dev
-```
-
-### Other Changes
-
-If you're using other package manager than `bun` you have to update the scripts in `package.json` file, workflow in `.github/workflows/build.yml` file and husky configuration in `.husky/pre-commit` file.
+Unified Starter - React Essential is a modern, feature-rich template for building React applications with all the essential configurations and tools pre-configured.
 
 ## Features
 
-- ✨ Framework: [React.js](https://reactjs.org/)
-- 🚀 Styling: [Tailwind CSS](https://tailwindcss.com/)
-- 💻 Language: [TypeScript](https://www.typescriptlang.org/)
-- 🧹 Linting and Formatting: [Biome.js](https://biomejs.dev/), [Prettier](https://prettier.io/), [ESLint](https://eslint.org/)
-- 🚀 Routing: [Tanstack React Router](https://tanstack.com/router/)
-- 🛠 Heading: [Unheaded](https://github.com/unjs/unhead)
-- 🎨 Themes: [Next Themes](https://github.com/pacocoursey/next-themes)
-- ⚙️ Build: Github Actions
-- 🛠 Commit: [Husky](https://typicode.github.io/husky/)
+- ✨ Framework: [React](https://reactjs.org/) with [Vite](https://vitejs.dev/) - Fast and efficient development environment
+- 🚀 Styling: [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- 💻 Language: [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript
+- 🧹 Linting and Formatting: [Biome.js](https://biomejs.dev/) - Fast and customizable linter and formatter
+- 🎨 Themes: [Theme Provider](src/lib/theme-provider.tsx) - Easy theme management
+- 💄 Icons: [Radix-Icons](https://www.radix-ui.com/icons) - A crisp set of 15×15 icons
+- 🎨 UI: [Shadcn UI](https://ui.shadcn.com/) - Re-usable components built with Radix UI and Tailwind CSS
+- ⚙️ Build: Github Actions - Automated workflows for CI/CD
+- 🛠 Commit: [Husky](https://typicode.github.io/husky/) - Git hooks made easy
+- 📦 Package: [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager
+- 🚀 Routing: [TanStack Router](https://tanstack.com/router/v1) - Type-safe routing for React
 
-## Contribute
+## Project Structure
 
-Contributions are always welcome! Please submit a pull request or open an issue to discuss your ideas.
+- `src/`: Source code directory
+  - `routes/`: Contains all routes and pages
+  - `ui/`: Contains all reusable components and primitives
+  - `lib/`: Includes helpers, utilities, and configuration files
+  - `styles/`: Global styles and theme configuration
+- `public/`: Static assets and images
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `pnpm install`
+3. Run the development server: `pnpm run dev`
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+## Guidelines
+
+- Keep components and primitives in the `src/ui/` folder
+- Place all routes and pages in the `src/routes/` folder
+- Store helpers, utilities, and configs in the `src/lib/` folder
+- Follow the TypeScript and Biome.js linting rules
+- Use Husky pre-commit hooks to ensure code quality
+
+## Customization
+
+- Modify the theme in `tailwind.config.ts`
+- Adjust global styles in `src/styles/root-layout.css`
+- Configure Vite settings in `vite.config.ts`
+
+## Available Scripts
+
+- `pnpm run dev`: Start the development server
+- `pnpm run build`: Build the production-ready application
+- `pnpm run typecheck`: Run TypeScript type checking
+- `pnpm run lint`: Run Biome.js linter
+- `pnpm run format`: Format code using Biome.js
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature/your-feature-name`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Submit a pull request
+
+For major changes, please open an issue first to discuss what you would like to change.

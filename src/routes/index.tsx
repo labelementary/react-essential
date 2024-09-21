@@ -1,4 +1,5 @@
 import { ThemeToggle } from "@/ui/components/theme-toggle";
+import { Label } from "@/ui/primitives/label";
 import { createFileRoute } from "@tanstack/react-router";
 import { useHead } from "unhead";
 
@@ -6,19 +7,18 @@ export const Route = createFileRoute("/")({
   component: () => <Home />,
 });
 
-useHead({
-  title: "React Essential",
-});
-
 function Home() {
+  useHead({
+    title: "Unified React Essential | Elementary",
+  });
   return (
     <div
       className={"relative flex h-screen flex-col items-center justify-center"}
     >
-      <h1 className={"text-5xl"}>React Essential</h1>
-      <p className={"my-4 text-sm"}>
-        React.js Essential - An Essential Template to build an modern react.js
-        application with all the essentials included.
+      <Label className={"text-5xl"}>React Essential</Label>
+      <p className={"my-6 w-[38rem] text-center text-sm"}>
+        Unified React.js Essential - An Essential Template to get started with
+        react.js application with all the essentials included...
       </p>
       <ThemeToggle />
     </div>

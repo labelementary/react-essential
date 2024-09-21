@@ -1,16 +1,15 @@
-# Unified Starter - React Essential
+# Unified React Essential
 
-Unified Starter - React Essential is a modern, feature-rich template for building React applications with all the essential configurations and tools pre-configured.
+Unified React Essential, An Essential Template to get started with react.js application with all the essentials included...
 
 ## Features
 
-- ✨ Framework: [React](https://reactjs.org/) with [Vite](https://vitejs.dev/) - Fast and efficient development environment
+- ✨ Library: [React](https://reactjs.org/) with [Vite](https://vitejs.dev/) - Fast and efficient development environment
 - 🚀 Styling: [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 - 💻 Language: [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript
 - 🧹 Linting and Formatting: [Biome.js](https://biomejs.dev/) - Fast and customizable linter and formatter
-- 🎨 Themes: [Theme Provider](src/lib/theme-provider.tsx) - Easy theme management
-- 💄 Icons: [Radix-Icons](https://www.radix-ui.com/icons) - A crisp set of 15×15 icons
-- 🎨 UI: [Shadcn UI](https://ui.shadcn.com/) - Re-usable components built with Radix UI and Tailwind CSS
+- 🎨 Themes: [next-themes](https://github.com/pacocoursey/next-themes) - Easy theming for React.js.
+- 💄 Icons: [lucide-react](https://lucide.dev/) - A comprehensive set of icons for React.js
 - ⚙️ Build: Github Actions - Automated workflows for CI/CD
 - 🛠 Commit: [Husky](https://typicode.github.io/husky/) - Git hooks made easy
 - 📦 Package: [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager
@@ -52,6 +51,7 @@ Unified Starter - React Essential is a modern, feature-rich template for buildin
 - `pnpm run build`: Build the production-ready application
 - `pnpm run typecheck`: Run TypeScript type checking
 - `pnpm run lint`: Run Biome.js linter
+- `pnpm run lint:fix`: Run Biome.js linter and fix issues
 - `pnpm run format`: Format code using Biome.js
 
 ## Contributing

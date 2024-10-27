@@ -9,38 +9,39 @@
     "lint": "biome lint --write .",
     "lint:fix": "biome lint --write . --unsafe",
     "format": "biome format --write .",
+    "check": "biome check --write .",
     "typecheck": "tsc --noEmit",
     "prepare": "husky",
-    "build:prepare": "pnpm run typecheck && pnpm run lint && pnpm run format && pnpm run build"
+    "build:prepare": "pnpm run typecheck && pnpm run lint && pnpm run format && pnpm run check && pnpm run build"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-slot": "^1.1.0",
-    "@tanstack/react-router": "^1.62.1",
+    "@tanstack/react-router": "^1.77.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.447.0",
+    "lucide-react": "^0.453.0",
     "next-themes": "^0.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tailwind-merge": "^2.5.3",
+    "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
-    "unhead": "^1.11.7"
+    "unhead": "^1.11.10"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.3",
-    "@tanstack/router-plugin": "^1.62.0",
-    "@tanstack/router-vite-plugin": "^1.62.0",
-    "@types/node": "^22.7.4",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.2",
+    "@biomejs/biome": "^1.9.4",
+    "@tanstack/router-plugin": "^1.76.4",
+    "@tanstack/router-vite-plugin": "^1.76.4",
+    "@types/node": "^22.8.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
     "husky": "^9.1.6",
     "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13",
-    "typescript": "^5.6.2",
-    "vite": "^5.4.8"
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
   },
-  "packageManager": "pnpm@9.12.0"
+  "packageManager": "pnpm@9.12.2"
 }

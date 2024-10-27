@@ -1,7 +1,7 @@
-import { useEffect } from "react";
-import { MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "@/lib/theme-provider";
 import { Button } from "@/ui/primitives/button";
+import { MoonIcon, SunIcon } from "lucide-react";
+import { useEffect } from "react";
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();

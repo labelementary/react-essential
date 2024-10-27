@@ -6,9 +6,9 @@ import {
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import "@/styles/root-layout.css";
-import { routeTree } from "./routeTree.gen";
 import { ThemeProvider } from "@/lib/theme-provider";
 import { createHead } from "unhead";
+import { routeTree } from "./routeTree.gen";
 
 export const head: ReturnType<typeof createHead> = createHead();
 

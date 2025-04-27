@@ -1,6 +1,6 @@
-# Unified React Essential
+# React Essential
 
-Unified React Essential, An Essential Template to get started with react.js application with all the essentials included...
+React Essential - An Essential Template to get started with React.js application with all the essentials included...
 
 ## Features
 
@@ -18,10 +18,14 @@ Unified React Essential, An Essential Template to get started with react.js appl
 ## Project Structure
 
 - `src/`: Source code directory
-  - `routes/`: Contains all routes and pages
-  - `ui/`: Contains all reusable components and primitives
-  - `lib/`: Includes helpers, utilities, and configuration files
-  - `styles/`: Global styles and theme configuration
+  - `/routes`: Contains all routes and pages
+  - `/components`: Contains reusable, presentational components that can be shared across different parts of the application.
+  - `/primitives`: Contains basic UI elements or primitive components such as buttons, inputs, etc., that are used in building more complex components.
+  - `/hooks`: Contains custom React hooks for specific logic or functionality that can be reused across the app.
+  - `/interfaces`: Contains TypeScript interfaces that define types for the app's data models or API responses.
+  - `/lib`: Includes helper functions, utilities, and configuration files like API clients, authentication methods, etc.
+  - `/providers`: Contains context providers for managing global state across the application.
+  - `/styles`: Global styles and theme configuration
 - `public/`: Static assets and images
 
 ## Getting Started
@@ -33,9 +37,12 @@ Unified React Essential, An Essential Template to get started with react.js appl
 
 ## Guidelines
 
-- Keep components and primitives in the `src/ui/` folder
-- Place all routes and pages in the `src/routes/` folder
-- Store helpers, utilities, and configs in the `src/lib/` folder
+- Keep reusable components in the components/ folder
+- Place primitive components like buttons, inputs, etc., in the primitives/ folder
+- Store hooks in the hooks/ folder to make them easily reusable
+- Define all interfaces in the interfaces/ folder
+- Store helpers, utilities, and configurations in the lib/ folder
+- Use context and global state management with the providers/ folder
 - Follow the TypeScript and Biome.js linting rules
 - Use Husky pre-commit hooks to ensure code quality
 

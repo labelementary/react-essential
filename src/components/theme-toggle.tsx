@@ -1,5 +1,5 @@
 import { useTheme } from "@/lib/theme-provider";
-import { Button } from "@/ui/primitives/button";
+import { Button } from "@/primitives/button";
 import { MoonIcon, SunIcon } from "lucide-react";
 import { useEffect } from "react";
 

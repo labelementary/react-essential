@@ -1,13 +1,13 @@
 import {
   type AnyRouter,
-  RouterProvider,
   createRouter,
+  RouterProvider,
 } from "@tanstack/react-router";
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import "@/styles/root-layout.css";
+import { createHead, UnheadProvider } from "@unhead/react/client";
 import { ThemeProvider } from "@/lib/theme-provider";
-import { UnheadProvider, createHead } from "@unhead/react/client";
 import { routeTree } from "./routeTree.gen";
 
 export const head: ReturnType<typeof createHead> = createHead();

@@ -1,7 +1,7 @@
-import { ThemeToggle } from "@/components/theme-toggle";
-import { Label } from "@/primitives/label";
 import { createFileRoute } from "@tanstack/react-router";
 import { useHead } from "@unhead/react";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { Label } from "@/primitives/label";
 
 export const Route = createFileRoute("/")({
   component: () => <Home />,
